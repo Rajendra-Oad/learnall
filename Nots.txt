@@ -1,0 +1,78 @@
+AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations. 
+
+It's primarily used for building dynamic single-page web applications (SPAs).
+
+AngularJS extends HTML attributes with Directives, and binds data to HTML with Expressions. It also handles dynamic views and data binding, allowing developers to build responsive web applications with less code.
+
+One of the key features of AngularJS is its two-way data binding, which means that changes in the model (JavaScript variables) are automatically reflected in the view (HTML), and vice versa. This helps in synchronizing the model and the view without the need for boilerplate code.
+
+AngularJS also provides dependency injection, which allows developers to write modular and testable code by injecting dependencies into components rather than hard-coding them.
+
+However, it's worth noting that AngularJS (often referred to as Angular 1.x) has been succeeded by Angular (or Angular 2+), which is a complete rewrite of AngularJS. Angular introduces many new features and improvements over AngularJS, but both frameworks serve similar purposes in web development.
+==============================
+=>Angular is a Front-end framework (Js Frame Work)
+=>To building UI 
+=>SPAs
+=>Angular Js and Angular Both are not Same
+=>Angular Js + JavaScript
+=>Angular + Typescript(MicroSoft)
+=>AngularJS(1)
+=>Angular(2 and 2+ Version) Currenet Version 17
+=>Google (Desktop and Mobile applications)
+=>Angular
+======================================================
+Angular:
+Pre Required Skills:
+HTML
+CSS and 
+JavaScript
+
+Pre-Required Softwares:
+->Visuval Studio Code(Write the code)
+->Node Js and NPM(Node Package Manger)
+->Angular CLI ->Command Line Interface
+------------------
+Windows 10 or 11
+8 Gb Ram
+min core i5 6th gen
+i3 ->10gen or Above
+----------------------
+Commands :
+->To check Node Js Version: node --version / node -v
+->NPM : npm --version or npm -v
+->To Check CLI : ng version =>Angular Version
+->Uninstall Angular CLI:npm uninstall -g @angular/cli
+
+->install Angular CLI:npm install -g @angular/cli
+
+->install Angular CLI:npm install -g @angular/cli@13
+=====================================
+with Standalone New Angular Project Creation: ng new Project_Name
+
+=>Folder Structure: ->Standalon components
+
+without Standalone:ng new project_name --standalone false
+
+To Run the Project: 
+ng serve / ng s
+ng serve --open / ng s -o
+===========================
+Components: Peace of part
+->Re usable
+->4 files : 
+ex: Home
+home.component.CSS=>CSS
+home.component.HTML=>HTML
+home.component.spect.ts=>Testing(No-use)
+home.component.ts=>Typescript
+===========================================
+Command: 
+ng generate component component_name
+ng g c component_name --skip-tests 
+
+ng g c home
+ng g c About
+ng g c contact
+ng g c Services
+ng g c navbar
+ng g c footer

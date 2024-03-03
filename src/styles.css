@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.error-alert {
+    display: block;
+    color: rgb(255, 0, 0);
+}
+
+.success-indicator {
+    color: #3cba54; /* Green color */
+    animation: bounce 0.6s ease;
+}

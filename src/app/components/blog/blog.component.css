@@ -1,0 +1,19 @@
+body {
+    transition: all 0.7s;
+}
+
+.card {
+    border-radius: 20px !important;
+}
+
+.card-body1 {
+    overflow-x:hidden ;
+    border-radius: 20px;
+}
+
+.card1 .card-body1 img {
+    overflow-x: hidden;
+    width: 100% !important;
+}
+
+

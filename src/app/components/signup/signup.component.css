@@ -1,0 +1,222 @@
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+::placeholder {
+    color: #000;
+}
+
+h3.signup {
+    font-size: 50px;
+    margin-top: 5rem !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+a.logo {
+    position: fixed;
+    top: 14px;
+    font-size: 10rem !important;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: blod;
+    left: 35px;
+    transition: all 0.7s;
+}
+
+a.logo h4 {
+    font-size: 27px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    border: none;
+    font-size: 18px;
+    min-width: 320px;
+    box-shadow: 0 1px 0 rgba(128, 128, 128, 0.409);
+    outline: none;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    border: none;
+    font-size: 18px;
+    min-width: 320px;
+    outline: none;
+    position: relative; /* Added for positioning of the underline */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    box-shadow: 0 1px 0 #058aff;
+}
+
+button[type="submit"] {
+    border: 1px solid #1184ff4a;
+    border-radius: 30px;
+    margin-top: 20px !important;
+    background-color: #fff;
+    color: #058aff;
+    min-width: 120px !important;
+    transition: all 0.7s;
+}
+
+button[type="submit"] i {
+    font-size: 9px;
+}
+
+button[type="submit"]:hover {
+    border: 1px solid #1184ff42;
+    background-color: #058aff;
+    color: #fff;
+}
+
+span.hr {
+    width: 1px;
+    background-color: rgba(128, 128, 128, 0.329);
+    height: 400px;
+}
+
+span.or-text {
+    position: relative;
+    text-align: center;
+    top: 185px;
+    left: -25px;
+    width: 50px;
+    height: 25px;
+    background-color: #fff;
+}
+
+button.btn.google img {
+    width: 43px;
+    height: 43px;
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 1px 1px 1px 1px #000;
+}
+
+button.btn.facebook img {
+    width: 43px;
+    height: 43px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px 0 0 5px;
+}
+
+.btn.apple img {
+    width: 43px;
+    height: 43px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px 0 0 5px;
+}
+
+button.btn.social-media {
+    border: 1px solid gray;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.google-link,
+.facebook-link,
+.apple-link {
+    display: flex;
+    align-items: center;
+}
+
+.btn.social-media.google span,
+.btn.social-media.facebook span,
+.btn.social-media.apple span {
+    flex: 1;
+    text-align: center;
+}
+
+button.btn.social-media {
+    color: #fff;
+}
+
+button.btn.social-media.google {
+    background-color: #1A73E8;
+    border: 1px solid #1A73E8;
+}
+
+button.btn.social-media.facebook {
+    background-color: #3B5998;
+    border: 1px solid #3B5998;
+}
+
+button.btn.social-media.apple {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+}
+
+.bottom-policy-footer p {
+    color: gray;
+}
+
+span.underline {
+    text-decoration: underline;
+    color: gray;
+}
+
+span.underline:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+.bottom-policy-footer {
+    font-size: 12px;
+    margin-top: 60px;
+}
+
+#header-signup {
+    animation: ani 0.4s ease-out forwards;
+}
+
+@keyframes ani {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+
+@media (max-width:768px) {
+
+    a.logo {
+        position: fixed;
+        top: 20px;
+        letter-spacing: 1px;
+        left: 30px;
+    }
+
+    h3.login {
+        font-size: 25px;
+        margin-top: 0rem !important;
+        font-weight: 500;
+        letter-spacing: 0px;
+    }
+}

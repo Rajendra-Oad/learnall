@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-4 d-flex align-items-center" routerLink="/home"><h3>Learn All</h3></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto middle-nav-items d-flex align-items-center justify-content-center ">
+          <li class="nav-item my-2 my-md-0 mt-4 mt-md-0">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active" id="active">Home</a>
+          </li>
+          <li class="nav-item my-2 my-lg-0">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+          </li>
+          <li class="nav-item my-2 my-lg-0">
+            <a class="nav-link" routerLink="/services" routerLinkActive="active">Services</a>
+          </li>
+          <li class="nav-item my-2 my-lg-0">
+            <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
+          </li>
+          <li class="nav-item my-2 my-lg-0">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+          </li>
+          <li class="nav-item d-none d-md-flex ms-4">
+            <button class="btn border rounded-circle"><i class="fa-solid fa-moon" id="mode"></i></button>
+          </li>
+          <li class="nav-item d-md-none d-xl-flex">
+            <button class="btn btn-login"><a class="nav-link" routerLink="/login">Log In</a></button>
+          </li>
+          <li class="nav-item d-md-none d-xl-flex mb-4 mb-md-0 m-md-0">
+            <button class="btn btn-register"><a class="nav-link" routerLink="/signup">Sign Up</a></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>

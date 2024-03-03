@@ -1,0 +1,86 @@
+/* footer--section--starts */
+footer {
+    background-color: #F8F9FA;
+    color: #000000 !important;
+}
+
+footer .col2 span {
+    line-height: 30px;
+    color: rgb(36, 80, 255);
+}
+
+footer .col4 form input {
+    background-color: #0e0f1117;
+    border: 1px solid rgba(128, 128, 128, 0.514);
+    padding: 9.2px;
+    color: #000000 !important;
+    outline: none;
+    position: relative;
+    border-right: none;
+}
+
+footer .col4 form input:hover,
+footer .col4 form input:active {
+    border-right: none;
+    background-color: #2022280c;
+}
+
+footer .col4 form button {
+    background-color: rgb(36, 80, 255);
+    padding: 9.98px 15px;
+    position: absolute;
+    right: 10px 15px;
+    border: 0;
+    color: #F6F7F9;
+}
+
+footer .col4 form button:hover {
+    background-color: rgb(36, 80, 255);
+}
+
+footer table tr td {
+    border: 1px solid rgba(128, 128, 128, 0.255);
+    /* padding: 5px; */
+}
+
+footer table tr td:hover {
+    border: 1px solid white;
+}
+
+footer table tr td img {
+    width: 100%;
+}
+
+footer table {
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+.f-bottom {
+    background-color: #ffffff;
+    color: #141416;
+}
+
+.f-bottom .copy span {
+    color: rgb(36, 80, 255);
+}
+
+.f-bottom .follow>i {
+    margin: 5px !important;
+}
+
+.f-bottom .row .col p {
+    margin-bottom: 0 !important;
+}
+
+.container-fluid.f-bottom {
+    padding: 0 55px;
+}
+
+table {
+    width: 100%;
+}
+
+
+
+

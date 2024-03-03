@@ -1,0 +1,38 @@
+.card {
+    border-radius: 20px !important;
+}
+
+body {
+    transition: all 0.7s;
+}
+.card-body.head-rate span {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(36, 80, 255);
+}
+
+.card1 .card-body1 img {
+    overflow: hidden;
+    width: 100% !important;
+}
+
+.card1 {
+    border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.container .card1 {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+img {
+    overflow-x: hidden;
+}
+
+@media (max-width:576px) {
+    .img {
+        overflow: hidden;
+    }
+}

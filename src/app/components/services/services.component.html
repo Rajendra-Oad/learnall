@@ -1,0 +1,129 @@
+<app-header></app-header>
+<h3 style="text-align: center;margin:80px 0 0 20px;">Our Services</h3>
+<div class="container mt-5">
+    <ng-container>
+        <table id="table">
+            <thead>
+                <tr class="text-light">
+                    <th class="text-center">SNO</th>
+                    <th>Course Name</th>
+                    <th class="text-center">Course Images</th>
+                    <th>Course Details</th>
+                    <th>Course Duration</th>
+                    <th>Course fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container id="tr" *ngFor="let course of courses;let idx=index">
+                    <tr>
+                        <td>{{idx + 1}}</td>
+                        <td><strong>{{ course.name }}</strong></td>
+                        <td><img src="assets/images/{{course.img}}" alt="{{course.name}}"></td>
+                        <td>
+                            <ul>
+                                <li *ngFor="let item of course.content">{{item}}</li>
+                            </ul>
+                        </td>
+                        <td>{{course.duration}}</td>
+                        <td class="text-danger">&#8377; {{course.fee}}</td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </ng-container>
+
+    <div class="bg-dark bg-gradient p-5 rounded">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-xxl-3">
+                <div class="card py-3 bg-secondary bg-gradient hover-effect cursor">
+                    <div class="card-body">
+                        <span>HTML</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 mt-4 mt-sm-0 col-xxl-3">
+                <div class="card py-3 bg-success bg-gradient hover-effect cursor">
+                    <div class="card-body">
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 mt-4 mt-xxl-0 col-xxl-3">
+                <div class="card py-3 bg-warning bg-gradient hover-effect cursor">
+                    <div class="card-body">
+                        <span>Javascript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 mt-4 mt-xxl-0 col-xxl-3">
+                <div class="card py-3 bg-info overlay bg-gradient hover-effect cursor">
+                    <div class="card-body">
+                        <span>Angular</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6 col-md-6 col-xxl-3">
+                <div class="card py-3 bg-primary bg-gradient hover-effect cursor">
+                    <div class="card-body">
+                        <span>Front-End</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 mt-4 mt-sm-0 col-xxl-3">
+                <div class="card py-3 bg-info bg-gradient hover-effect cursor">
+                    <div class="card-body">
+                        <span>Back-End</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 mt-4 mt-xxl-0 col-xxl-3">
+                <div class="card py-3 bg-dark bg-gradient hover-effect cursor">
+                    <div class="card-body">
+                        <span>UI Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-sm-6 mt-4 mt-xxl-0 col-xxl-3">
+                <div class="card py-3 bg-danger bg-gradient hover-effect cursor">
+                    <div class="card-body">
+                        <span>UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6 col-md-6 col-xxl-3">
+                <div class="card py-3 bg-success bg-gradient hover-effect cursor">
+                    <div class="card-body">
+                        <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 mt-4 mt-sm-0 col-xxl-3">
+                <div class="card py-3 bg-danger bg-gradient hover-effect cursor">
+                    <div class="card-body">
+                        <span>Java</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 mt-4 mt-xxl-0 col-xxl-3">
+                <div class="card py-3 bg-secondary bg-gradient  hover-effect cursor">
+                    <div class="card-body">
+                        <span>Full Stack <span class="d-none d-xl-block">Java</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 mt-4 mt-xxl-0 col-xxl-3">
+                <div class="card py-3 bg-primary bg-gradient hover-effect hover-effect cursor">
+                    <div class="card-body">
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<app-footer></app-footer>

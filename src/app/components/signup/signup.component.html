@@ -1,0 +1,101 @@
+<div class="conatiner-fluid">
+    <a routerLink="/home" class="logo d-none d-sm-block">
+        <h4>Learn All</h4>
+    </a>
+    <a routerLink="/home" class=" mt-5 logo-sm d-block d-sm-none fw-bold text-center text-decoration-none">
+        <h1>Learn All</h1>
+    </a>
+    <div class="mt-5" id="header-signup">
+        <h3 class="text-center signup">Sign Up</h3>
+        <p class="text-center">Already have an account? <a class="text-decoration-none ms-1" routerLink="/login">Log
+                In</a></p>
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-md-12 col-lg-6 col-12 d-flex justify-content-lg-end pe-lg-5 justify-content-center mt-4">
+                    <form class="" #reg="ngForm">
+                        <input type="text" class="fname input-field" required placeholder="First Name" name="fname"
+                            [(ngModel)]="signup.fname" #fname="ngModel"><br>
+                        <div *ngIf="fname.invalid && (fname.touched || fname.dirty)">
+                            <span class="error-alert"><i class="fa-solid fa-circle-exclamation p-0 me-2 mt-2"></i>Fill
+                                your Full Name</span>
+                        </div>
+                        <input type="text" class="lname mt-3 mb-1 input-field" required placeholder="Last Name"
+                            name="lnamae" [(ngModel)]="signup.lname" #lname="ngModel"><br>
+                        <div *ngIf="lname.invalid && (lname.touched || lname.dirty)">
+                            <span class="error-alert"><i class="fa-solid fa-circle-exclamation p-0 me-2 mt-2"></i>Fill
+                                your Last Name</span>
+                        </div>
+                        <input type="email" class="email mt-3 mb-1 input-field" required placeholder="Email Address"
+                            name="email" [(ngModel)]="signup.email" #email="ngModel"><br>
+                        <div *ngIf="email.invalid && (email.touched || email.dirty)">
+                            <span class="error-alert"><i class="fa-solid fa-circle-exclamation p-0 me-2 mt-2"></i>Fill
+                                the Email Address</span>
+                        </div>
+                        <input type="number" class="phone mt-3 mb-1 input-field" required placeholder="Phone Number"
+                            name="phone" [(ngModel)]="signup.phone" #phone="ngModel"><br>
+                        <div *ngIf="phone.invalid && (phone.touched || phone.dirty)">
+                            <span class="error-alert"><i class="fa-solid fa-circle-exclamation p-0 me-2 mt-2"></i>Fill
+                                the Phone Number</span>
+                        </div>
+                        <input type="password" class="password mt-3 mb-1 input-field" required placeholder="Password"
+                            name="password" [(ngModel)]="signup.password" #password="ngModel"><br>
+                        <div *ngIf="password.invalid && (password.touched || password.dirty)">
+                            <span class="error-alert"><i class="fa-solid fa-circle-exclamation p-0 me-2 mt-2"></i>Fill
+                                the above Password</span>
+                        </div>
+                        <button class="btn d-flex mt-5 align-items-center justify-content-center" type="submit"
+                            (click)="register()" [disabled]="reg.invalid || signupSuccess">
+                            <span *ngIf="!signupSuccess">Sign Up</span>
+                            <span *ngIf="signupSuccess" class="success-indicator"><i
+                                    class="fa-solid fa-circle-check"></i></span>
+                        </button>
+                        <p [ngClass]="clr">{{msg}}</p>
+                    </form>
+                </div>
+                <span class="hr p-0 d-none d-md-block"></span>
+                <span class="or-text d-none d-md-inline">or</span>
+                <div
+                    class="col-md-12 col-lg-5 col-12 d-flex justify-content-lg-start p-0 justify-content-center align-items-center mt-5 mt-md-0 me-auto">
+                    <div class="row">
+                        <div class="d-flex-flex-column justify-content-center align-items-center">
+                            <div class="col-12">
+                                <div class="google-link">
+                                    <button class="btn social-media google ps-0" (click)="redirectToGoogleSignup()"><img
+                                            src="assets/images/Google.svg" alt="google"><span>Continue with
+                                            Google</span></button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="facebook-link">
+                                    <button class="btn social-media facebook ps-0"
+                                        (click)="redirectToFacebookSignup()"><img src="assets/images/facebook1.svg"
+                                            alt="facebook"><span>Continue with
+                                            Facebook</span></button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="apple-link">
+                                    <button class="btn social-media apple p-0" (click)="redirectToAppleSignup()"><img
+                                            src="assets/images/apple.svg" alt="apple"><span>Continue with
+                                            Apple</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-policy-footer text-center">
+        <div class="px-4 text-secondary">
+            * By signing up, you agree to our <span class="underline">Terms of Use</span> and acknowledge you’ve read
+            our <span class="underline">Privacy Policy</span>
+        </div>
+        <hr class="mx-4 d-md-none d-block">
+        <p class="px-sm-5 px-4">
+            This site is protected by reCAPTCHA Enterprise. <span class="underline">Google's Privacy Policy</span> and
+            <span class="underline">Terms of Service</span> apply.
+        </p>
+    </div>
+</div>

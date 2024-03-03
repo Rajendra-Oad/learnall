@@ -1,0 +1,114 @@
+body {
+    overflow-x: hidden;
+    transition: all 0.7s;
+}
+
+.navbar {
+    font-weight: 600;
+    transition: all 1s;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.middle-nav-items a {
+    background-color: #F8F9FA;
+    padding: 5px 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.4s;
+}
+
+.middle-nav-items a.active {
+    color: rgb(36, 80, 255) !important;
+    opacity: 2;
+    background-color: #e4e4e4;
+    border-radius: 30px;
+}
+
+.middle-nav-items a:hover {
+    color: rgb(36, 80, 255) !important;
+    font-weight: 600;
+    opacity: 2;
+    background: #f1f1f1;
+    border-radius: 30px;
+}
+
+.middle-nav-items a.active:hover {
+    color: rgb(36, 80, 255) !important;
+    font-weight: 600;
+    opacity: 1;
+    background: #e4e4e4;
+    border-radius: 30px;
+}
+
+.btn.btn-login a {
+    border-radius: 10px;
+    background: none;
+    color: rgb(36, 80, 255);
+    transition: all 0.5s;
+
+}
+
+.btn.btn-login a:hover {
+    background-color: rgb(36, 80, 255) !important;
+    color: #e4e4e4 !important;
+    border-radius: 20px;
+}
+
+.btn.btn-register a {
+    border-radius: 10px;
+    color: rgb(36, 80, 255);
+    background: none;
+    transition: all 0.5s;
+}
+
+.btn.btn-register a:hover {
+    background-color: rgb(36, 80, 255) !important;
+    color: #e4e4e4 !important;
+    border-radius: 20px;
+}
+
+@media (max-width:768px) {
+    .navbar-nav {
+        overflow-x: hidden;
+    }
+
+    .middle-nav-items a {
+        background-color: none;
+        border-radius: 30px;
+        transition: all 0.4s;
+    }
+
+    .middle-nav-items a.active {
+        color: rgb(36, 80, 255) !important;
+        font-weight: 600;
+        opacity: 2;
+        background-color: #F8F9FA;
+        border-radius: 30px;
+    }
+
+    .middle-nav-items a:hover {
+        color: rgb(36, 80, 255) !important;
+        font-weight: 600;
+        opacity: 2;
+        background: none;
+        border-radius: 30px;
+    }
+
+    .middle-nav-items a.active:hover {
+        color: rgb(36, 80, 255) !important;
+        font-weight: 600;
+        opacity: 2;
+        background: #F8F9FA;
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,73 @@
+=====================================================
+Angular TOPICS:
+
+Class:1
+Introduction
+Installation
+Commands
+Project Creation
+File structure Explanation
+Welcome Project
+
+Class:2
+App Component designe
+Bootstrap Include 
+Components Creation(Home,About,Services,contact,register,login,admin)
+Routing
+routerLink
+routerLinkActive
+router-Outlet
+
+--------------------------------------------------------------------------
+Class:3
+
+TYPESCRIPT:
+varibles declare(public,Private)
+methods
+ngonInit
+class
+constructor
+
+Bindings:
+one-way Binding:
+    ->DataBinding(Interpolation{{}})
+    ->Property Binding([])
+    ->Event Binding(())
+
+Class:4
+
+Directives:
+    ->structural Directives
+        ->*ngFor  =>
+        ->*ngIf
+        ->*ngSwitch
+
+    ->Attribute Directives
+        ->ngClass
+        ->ngStyles
+        ->ngSwitch
+
+->ng-container
+
+Class:5
+    two-way Binging:
+    ->Templete Driven Form Validation
+    ->Reactive Form Validation
+
+Class:6
+
+->API Intigration  Register,Login
+->Login, Logout, Navigate to Dashboard
+->local Storage
+->Service
+
+Class:7 & 8
+
+->Components Interaction(Parent to child and child to parent)
+->@Input(),@Output()
+->Life cycle methods
+->Add to Cart
+->Promisses and Observables
+->API Intigration CURD Operations(ADD,GET,UPDATE,DELETE)
+->STUDENT(CURD OPERATIONS)
+->Angular 17 New features

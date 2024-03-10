@@ -107,8 +107,8 @@ span.or-text {
 }
 
 button.btn.google img {
-  width: 43px;
-  height: 43px;
+  width: 43.5px;
+  height: 43.5px;
   border-radius: 5px 0 0 5px;
   background-color: #fff;
   padding: 5px;
@@ -116,8 +116,8 @@ button.btn.google img {
 }
 
 button.btn.facebook img {
-  width: 43px;
-  height: 43px;
+  width: 44px;
+  height: 44px;
   padding: 10px;
   background-color: #fff;
   border-radius: 5px 0 0 5px;
@@ -127,12 +127,8 @@ button.btn.facebook img {
   width: 43px;
   height: 43px;
   padding: 10px;
-  background-color: #fff;
-  border: 1px solid black;
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
   border-radius: 5px 0 0 5px;
+  border-right: 1px solid black;
 }
 
 button.btn.social-media {

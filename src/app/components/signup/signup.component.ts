@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ApiService } from '../../service/api.service';
 
 @Component({
   selector: 'app-signup',
@@ -18,7 +18,7 @@ export class SignupComponent {
   public msg:any;
   public clr={red:false,green:false}
   public signupSuccess:boolean=false;
-  constructor(public api:HttpClient){
+  constructor(public api:ApiService){
 
   }
 
@@ -31,7 +31,7 @@ export class SignupComponent {
     data.append("ph",this.signup.phone);
     data.append("pwd",this.signup.password);
 
-    this.api.post('http://ilandertech.com/api/index.php/Welcome/AddStuRegister',data).subscribe((response:any)=>{
+    this.api.register(data).subscribe((response:any)=>{
       
     console.log(response);
 

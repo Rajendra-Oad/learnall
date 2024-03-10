@@ -1,1 +1,22 @@
-<p>admin works!</p>
+<div class="conatiner-fluid">
+    <a routerLink="/admin" class="logo d-none d-sm-block"><h4>Learn All</h4></a>
+    <a routerLink="/home" class="mt-5 logo-sm d-block d-sm-none fw-bold text-center text-decoration-none"><h1>Learn All</h1></a>
+    <div class="mt-5" id="header-login">
+        <h3 class="text-center login">Admin Users</h3>
+        <div class="container">
+                <div class="mt-5 mx-auto d-flex justify-content-center align-items-center">
+                    <form class="" #reg="ngForm" [formGroup]="loginForm">
+                        <input  formControlName="email" type="email" class="email mt-3 mb-1 input-field" required placeholder="Email Address"
+                            name="email"><br>
+                        <input type="password" class="password mt-3 mb-1 input-field" required placeholder="Password"
+                            name="password" formControlName="password"><br>
+                        <a class="forgot-link ms-2" routerLink="#">Forgot Email?</a>
+                        <button class=" mx-auto btn d-flex mt-5 align-items-center justify-content-center" type="submit"
+                            (click)="login()">
+                            <span>Login<i class="fa-solid fa-chevron-right ms-3"></i></span>
+                        </button>
+                    </form>
+                </div>
+        </div>
+    </div>
+</div>

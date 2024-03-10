@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { ApiService } from '../../service/api.service';
 
 @Component({
   selector: 'app-login',
@@ -12,10 +13,11 @@ export class LoginComponent {
     email:"",
     password:""
   }
+
   public msg:any;
   public clr={red:false,green:false}
   public loginSuccess:boolean=false;
-  constructor(public api:HttpClient){
+  constructor(public api:ApiService,public router:Router){
 
   }
 
@@ -25,7 +27,7 @@ export class LoginComponent {
     data.append("userEmail",this.login.email);
     data.append("userPassword",this.login.password);
 
-    this.api.post('http://ilandertech.com/api/index.php/Welcome/StuLogin',data).subscribe((response:any)=>{
+    this.api.login(data).subscribe((response:any)=>{
       
     console.log(response);
 
@@ -37,6 +39,10 @@ export class LoginComponent {
           this.loginSuccess = false;
       }, 2000);
       this.clr={red:false,green:true}
+      setTimeout(() => {
+        this.router.navigate(['/home']);
+        localStorage.setItem("email",this.login.email);
+      }, 3000);
     }else{
       this.clr={red:true,green:false}
     }

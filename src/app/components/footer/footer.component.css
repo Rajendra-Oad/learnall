@@ -1,7 +1,18 @@
-/* footer--section--starts */
+/* Styles for footer section */
 footer {
-    background-color: #F8F9FA;
+    background-color: #2D2F31;
     color: #000000 !important;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 13.5px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 footer .col2 span {
@@ -9,56 +20,9 @@ footer .col2 span {
     color: rgb(36, 80, 255);
 }
 
-footer .col4 form input {
-    background-color: #0e0f1117;
-    border: 1px solid rgba(128, 128, 128, 0.514);
-    padding: 9.2px;
-    color: #000000 !important;
-    outline: none;
-    position: relative;
-    border-right: none;
-}
-
-footer .col4 form input:hover,
-footer .col4 form input:active {
-    border-right: none;
-    background-color: #2022280c;
-}
-
-footer .col4 form button {
-    background-color: rgb(36, 80, 255);
-    padding: 9.98px 15px;
-    position: absolute;
-    right: 10px 15px;
-    border: 0;
-    color: #F6F7F9;
-}
-
-footer .col4 form button:hover {
-    background-color: rgb(36, 80, 255);
-}
-
-footer table tr td {
-    border: 1px solid rgba(128, 128, 128, 0.255);
-    /* padding: 5px; */
-}
-
-footer table tr td:hover {
-    border: 1px solid white;
-}
-
-footer table tr td img {
-    width: 100%;
-}
-
-footer table {
-    border-collapse: separate;
-    border-spacing: 4px;
-}
-
 .f-bottom {
-    background-color: #ffffff;
-    color: #141416;
+    background-color: #2D2F31;
+    color: #ffffff;
 }
 
 .f-bottom .copy span {
@@ -77,8 +41,58 @@ footer table {
     padding: 0 55px;
 }
 
+.f-top .top-companies p {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.f-top .top-companies p{
+    color: #cbcef8;
+}
+
+.f-top .brand-icons i {
+    font-size: 40px;
+}
+
 table {
     width: 100%;
+}
+
+#myModal .modal-dialog {
+    max-width: 500px; /* Adjust the width as per your requirement */
+}
+
+#myModal button.btn-close1 {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+#myModal .modal-body .row .column {
+    background-color: #fff ;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 0 10px 10px 0;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+#myModal .modal-body .row .column:hover{
+    background-color: rgba(128, 128, 128, 0.21) ;
+}
+
+#myModal .modal-body {
+    padding: 30px 35px;
 }
 
 

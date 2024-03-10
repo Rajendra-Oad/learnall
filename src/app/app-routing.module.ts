@@ -7,6 +7,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { LoginComponent } from './components/login/login.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { CartComponent } from './components/cart/cart.component'
+import { AdminComponent } from './components/admin/admin.component';
+import { UserComponent } from './components/dashboard/user/user.component';
 
 const routes: Routes = [
   {
@@ -40,7 +44,23 @@ const routes: Routes = [
   {
     path:"blog",
     component:BlogComponent
-  }
+  },
+  {
+    path:"courses",
+    component:CoursesComponent
+  },
+  {
+    path:"cart",
+    component:CartComponent
+  },
+  {
+    path:"admin",
+    component:AdminComponent
+  },
+  {
+    path:"user",
+    component:UserComponent
+  },
 ];
 
 @NgModule({

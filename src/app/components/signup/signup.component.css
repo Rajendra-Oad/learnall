@@ -39,17 +39,6 @@ input[type="number"] {
     min-width: 320px;
     box-shadow: 0 1px 0 rgba(128, 128, 128, 0.409);
     outline: none;
-}
-
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"] {
-    border: none;
-    font-size: 18px;
-    min-width: 320px;
-    outline: none;
     position: relative; /* Added for positioning of the underline */
 }
 
@@ -68,10 +57,6 @@ button[type="submit"] {
     color: #058aff;
     min-width: 120px !important;
     transition: all 0.7s;
-}
-
-button[type="submit"] i {
-    font-size: 9px;
 }
 
 button[type="submit"]:hover {
@@ -106,8 +91,8 @@ button.btn.google img {
 }
 
 button.btn.facebook img {
-    width: 43px;
-    height: 43px;
+    width: 43.5px;
+    height: 43.5px;
     padding: 10px;
     background-color: #fff;
     border-radius: 5px 0 0 5px;

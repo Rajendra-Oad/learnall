@@ -1,45 +1,192 @@
-body {
-    overflow: hidden;
+body,html {
+    background: rgb(27, 44, 139) !important;
+    background: linear-gradient(90deg, rgba(27, 44, 139, 1) 0%, rgba(69, 87, 186, 1) 100%, rgba(90, 116, 239, 1) 100%) !important;
 }
 
-#demo img {
-    width: 100%;
-    height: 600px;
+section.table-details {
+    color: #ffffff;
+    background: rgb(27, 44, 139);
+    background: linear-gradient(90deg, rgba(27, 44, 139, 1) 0%, rgba(69, 87, 186, 1) 100%, rgba(90, 116, 239, 1) 100%);
+    position: relative;
+    top: 0;
 }
 
-#courses img {
-    width: 100%;
-    height: 200px;
+.table-details  h1 {
+    font-size: 50px !important;
 }
 
-.carousel-inner .carousel-item {
-    overflow-x: hidden;
+.animation-rec span.outside-rec{
+    position: absolute;
+    top: -100px;
+    left: -420px;
+    width: 500px;
+    opacity: 0.2;
+    height: 500px;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    transform: rotate(70deg);
+    transition: all 0.5s ease;
+    animation: ani2 6s alternate forwards infinite;
 }
 
-.carousel-inner .carousel-item img {
-    width: 1650px !important;
+@keyframes ani2 {
+    0%{
+        top: -100px;
+    }
+    100%{
+        top: 50px;
+    }
+    
 }
 
-.carousel-indicators button {
-    width: 10px;
-    height: 10px;
-    margin-right: 10px;
-    border-radius: 50%;
-    margin-bottom: 30px;
+.animation-rec-1 span{
+    position: absolute;
+    top: -100px;
+    right: -420px;
+    
+    width: 500px;
+    opacity: 0.2;
+    height: 500px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-color:none;
+    transform: rotate(70deg);
+    transition: all 0.5s ease;
+    animation: ani2 6s alternate forwards infinite;
 }
 
 
-@media (max-width:768px) {
-    .carousel-inner .carousel-item img {
-        width: 768px !important;
-        
+.table-details .mini-cards .btn-1 {
+    background-color: transparent !important;
+    border: 1px solid #ffffff71 !important;
+    color: #ffffff;
+    width: 160px;
+    height: 60px;
+    padding: 8px 25px !important;
+    border-radius: 10px !important;
+}
+
+.table-details .mini-cards .btn-1:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff;
+}
+
+.table-details .mini-start-btn button {
+    background-color: #ffffff;
+    padding: 10px 0px 10px 15px;
+}
+
+.table-details .mini-start-btn .arrow-come {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.table-details .mini-start-btn button:hover .arrow-come {
+    visibility: visible;
+    opacity: 1;
+    margin-left: 25px;
+}
+
+.table-details .mini-start-btn button {
+    transition: all 0.7s;
+    animation: ani 0.5s forwards ease-in-out;
+}
+
+@keyframes ani {
+    from {
+        padding: 10px;
+    }
+
+    to {
+        padding: 10px 15px;
     }
 }
-/* .navbar #active {
-    color: rgb(36, 80, 255) !important;
-    font-weight: 600;
-    opacity: 2;
-    background-color: #e4e4e4;
+
+.table-details .card {
+    background-color: transparent !important;
+    backdrop-filter: blur(10px) !important;
+    width: 100%;
+    user-select: none !important;
+}
+
+ .sticky-side-items {
+    position: absolute;
+    bottom: 10%;
+    right: 4%;
+}
+
+.sticky-side-items1 {
+    position: absolute;
+    bottom:-40%;
+    right: 7%;
+    user-select: none !important;
+}
+
+.sticky-side-items2 {
+    position: absolute;
+    bottom: 0;
+    left: 14%;
+}
+
+.sticky-side-items2 .card {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    user-select: none !important;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.sticky-side-items2 .line-through-img::after{
+    position: absolute;
+    bottom: -10px;
+    right: -52px;
+    content:"";
+    z-index: -999;
+    height: 102px;
+    width: 1px;
+    transform: rotate(90deg);
+    background-color: #fff;
+}
+
+.sticky-side-items1 .card {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    user-select: none !important;
+    border: 1px solid #fff;
+}
+
+.sticky-side-items .url-bar button {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 20px;
+    color: #ffffff;
     padding: 5px 15px;
-    border-radius: 30px;
-} */
+    border: 1px solid #fff !important;
+}
+
+section.course-details {
+    background-color: #ffffff;
+    padding: 140px 0;
+}
+
+@media (max-width:768px) {
+    .table-details .table-content h1 {
+        font-size: 45px !important;
+    }
+}
+
+
+section.quote {
+    background-color: #C19BF8;
+}
+
+section.quote .qoute-text h1 {
+    font-size: 55px;
+}
+
+@media (max-width:576px) {
+    .table-details .table-content h1 {
+        font-size: 35px !important;
+    }
+}

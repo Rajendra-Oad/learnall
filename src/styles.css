@@ -6,7 +6,9 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
     text-decoration: none;
+    cursor: default;
 }
 
 .error-alert {
@@ -14,7 +16,9 @@
     color: rgb(255, 0, 0);
 }
 
+
 .success-indicator {
-    color: #3cba54; /* Green color */
+    color: #3cba54;
+    /* Green color */
     animation: bounce 0.6s ease;
 }

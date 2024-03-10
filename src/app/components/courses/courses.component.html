@@ -1,0 +1,96 @@
+<app-header></app-header>
+
+<section id="courses" class="container">
+  <h1 class="text-left text-primary my-5 fw-bold">COURSE LIST</h1>
+  <div class="row">
+    <ng-container>
+      <div class="col-md-4 col-sm-6 col-12 mb-md-5 mb-4 " *ngFor="let course of courseList">
+        <div class="card h-100">
+          <img src="assets/images/{{course.img}}" alt="" class="card-img">
+          <div class="card-body">
+            <div class="card-content d-flex justify-content-between">
+              <h3 class="card-title">{{course.name}}</h3>
+              <button class="heart"><svg class="text-white h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 26">
+                  <path
+                    d="M12.76 3.76a6 6 0 0 1 8.48 8.48l-8.53 8.54a1 1 0 0 1-1.42 0l-8.53-8.54a6 6 0 0 1 8.48-8.48l.76.75.76-.75zm7.07 7.07a4 4 0 1 0-5.66-5.66l-1.46 1.47a1 1 0 0 1-1.42 0L9.83 5.17a4 4 0 1 0-5.66 5.66L12 18.66l7.83-7.83z"
+                    class="icon-path"></path>
+                </svg></button>
+            </div>
+            <div class="card-content-def">
+              <ng-container *ngIf="course.ratings >=1">
+                <i class="fa-solid fa-star"></i>
+              </ng-container>
+              <ng-container *ngIf="course.ratings >= 2">
+                <i class="fa-solid fa-star"></i>
+              </ng-container>
+              <ng-container *ngIf="course.ratings >= 3">
+                <i class="fa-solid fa-star"></i>
+              </ng-container>
+              <ng-container *ngIf="course.ratings >= 4">
+                <i class="fa-solid fa-star"></i>
+              </ng-container>
+              <ng-container *ngIf="course.ratings == 4">
+                <i class="fa-regular fa-star"></i>
+              </ng-container>
+              <ng-container
+                *ngIf="course.ratings == 4.5 || course.ratings == 3.5 || course.ratings == 2.5 || course.ratings == 1.5 || course.ratings == 0.5">
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </ng-container>
+              <ng-container *ngIf="course.ratings ==5">
+                <i class="fa-solid fa-star"></i>
+              </ng-container>
+              <span class="ms-2 text-primary">{{course.ratings}}</span>
+              <p class="text-secondary">{{course.about}}</p>
+            </div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="EyeOpen">
+                        <path d="M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19c-4.182 0-7.764-4.013-9.257-5.962a1.692 1.692 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5c4.182 0 7.764 4.013 9.257 5.962z" />
+                        <circle cx="12" cy="12" r="3" />
+                      </svg> eye-->
+            <hr />
+            <div class="card-details d-flex justify-content-between container-fluid">
+              <div class="duration-detail d-flex align-items-center">
+                <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  display="block" id="Calendar">
+                  <rect x="2" y="4" width="20" height="18" rx="4" />
+                  <path d="M8 2v4" />
+                  <path d="M16 2v4" />
+                  <path d="M2 10h20" />
+                </svg><span>Duration - <span class="text-primary">{{course.duration}}</span></span>
+              </div>
+              <div class="fee-detail">
+                <i class="fa-solid fa-indian-rupee-sign me-2"></i><span>Fee- <span
+                    class="text-primary">{{course.fee}}</span></span>
+              </div>
+            </div>
+            <hr />
+            <div class="cart-items text-center row">
+              <div class="col-6">
+                <button class="btn btn-light border w-100">READ MORE</button>
+              </div>
+              <div class="col-6">
+                <button class="btn text-light bg-dark bg-opacity-75 shadow w-100" (click)="addCart(course)">ADD TO
+                  CART</button>
+                <!-- <span *ngIf="isInCart(course)">Alreay in Cart</span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>
+
+
+<section class="quote text-center py-5" style="background-color: #C3FB4D;">
+  <div class="container">
+    <div class="qoute-text py-5">
+      <h1 class="fw-normal mb-5">Unlock knowledge. Start learning now</h1>
+      <button class="btn btn-dark text-light rounded-pill fs-5 px-3">Get Started</button>
+    </div>
+  </div>
+</section>
+
+
+<app-footer></app-footer>

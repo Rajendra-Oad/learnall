@@ -1,0 +1,28 @@
+/* 
+section{
+    background-color: rgba(128, 128, 128, 0.1);
+} */
+section.cartContainer .items-in-cards img {
+    width: 300px !important;
+    border-radius: 10px !important;
+}
+
+.add-more-courses-btn button {
+    border: 1px solid #000;
+    background: none !important;
+    transition: all 0.7s;
+}
+
+.add-more-courses-btn button:hover{
+    border: 1px solid #000;
+    color: aliceblue;
+    background: #000 !important;
+}
+
+.add-more-courses-btn button:active{
+    border: 1px solid #896b00;
+    color: aliceblue;
+    background: #896b00 !important;
+}
+
+

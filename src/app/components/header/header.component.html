@@ -1,36 +1,71 @@
-<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top shadow">
-    <div class="container-fluid">
-      <a class="navbar-brand ms-4 d-flex align-items-center" routerLink="/home"><h3>Learn All</h3></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ms-auto middle-nav-items d-flex align-items-center justify-content-center ">
-          <li class="nav-item my-2 my-md-0 mt-4 mt-md-0">
-            <a class="nav-link" routerLink="/home" routerLinkActive="active" id="active">Home</a>
-          </li>
-          <li class="nav-item my-2 my-lg-0">
-            <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
-          </li>
-          <li class="nav-item my-2 my-lg-0">
-            <a class="nav-link" routerLink="/services" routerLinkActive="active">Services</a>
-          </li>
-          <li class="nav-item my-2 my-lg-0">
-            <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
-          </li>
-          <li class="nav-item my-2 my-lg-0">
-            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
-          </li>
-          <li class="nav-item d-none d-md-flex ms-4">
-            <button class="btn border rounded-circle"><i class="fa-solid fa-moon" id="mode"></i></button>
-          </li>
-          <li class="nav-item d-md-none d-xl-flex">
-            <button class="btn btn-login"><a class="nav-link" routerLink="/login">Log In</a></button>
-          </li>
-          <li class="nav-item d-md-none d-xl-flex mb-4 mb-md-0 m-md-0">
-            <button class="btn btn-register"><a class="nav-link" routerLink="/signup">Sign Up</a></button>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-4 d-flex align-items-center text-dark" routerLink="/home">
+      <h3>Learn All</h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ms-auto middle-nav-items d-flex align-items-center justify-content-center">
+        <li class="nav-item my-2 my-md-0 mt-4 mt-md-0">
+          <a class="nav-link links special-icons" routerLink="/home" routerLinkActive="active" id="active">Home</a>
+        </li>
+        <li class="nav-item my-2 my-lg-0 ">
+          <a class="nav-link links special-icons" routerLink="/courses" routerLinkActive="active">Courses</a>
+        </li>
+        <li class="nav-item my-2 my-lg-0">
+          <a class="nav-link links special-icons" routerLink="/services" routerLinkActive="active">Services</a>
+        </li>
+        <li class="nav-item my-2 my-lg-0 d-md-none d-xl-flex">
+          <a class="nav-link links special-icons" routerLink="/blog" routerLinkActive="active">Blog</a>
+        </li>
+        <li class="nav-item my-2 my-lg-0">
+          <a class="nav-link links special-icons" routerLink="/about" routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item my-2 my-lg-0">
+          <a class="nav-link links special-icons" routerLink="/contact" routerLinkActive="active">Contact</a>
+        </li>
+        <li class="nav-item my-2 my-lg-0 position-relative search-bar-contanier d-flex">
+          <input type="text" placeholder="Search" class="search-input-txt"
+            style="border-right: 1px solid rgba(128, 128, 128, 0.096);">
+          <a class="nav-link links icon-links search-icon special-icons" routerLinkActive="active"
+            style="border-radius: 50%;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;background: #D8D9DF;"><i
+              class="fa-solid fa-magnifying-glass" style="cursor: pointer; "></i></a>
+        </li>
+        <li class="nav-item my-2 my-lg-0 position-relative special-icons">
+          <a class="nav-link links icon-links " routerLink="/cart" routerLinkActive="active"
+            style="border-radius: 50%;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;background: #D8D9DF;"><i
+              class="fa-solid fa-cart-shopping" style="cursor: pointer;"></i></a>
+          <span
+            class="countCart position-absolute bg-dark text-light rounded-circle d-flex align-items-center justify-content-center">{{cartCount.length}}</span>
+        </li>
+        <li class="nav-item my-2 my-lg-0 user-box position-relative" (click)="toggleDropdown()"
+          [class.open]="openDropdown">
+          <a class="nav-link links icon-links user special-icons" routerLinkActive="active"
+            style="border-radius: 50%;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;background: #D8D9DF;"><i class="fa fa-user fa-solid" aria-hidden="true" style="cursor: pointer;"></i></a>
+          <div class="position-absolute text-light user-dropdown bg-light bg-gradient shadow-lg" *ngIf="openDropdown"
+            (click)="stopOpen($event)">
+            <div class="container-fluid">
+              <p class="text-center fw-bold text-dot-content bg-body-tertiary text-dark"><i
+                class="fa fa-user fa-solid me-2"></i>{{user}}</p>
+              <button
+                class="btn w-100 text-light btn-secondary mb-3 fw-medium d-flex align-items-center justify-content-center"><i
+                  class="fa-regular fa-circle-user"></i><span class="mx-auto">Account</span></button>
+              <button
+                class="btn text-light w-100 btn-secondary fw-medium mb-3 d-flex align-items-center justify-content-center"><i
+                  class="fa-solid fa-gear me-auto"></i><span class="me-auto">Settings</span></button>
+              <button class="btn text-dark w-100 btn-light fw-medium d-flex align-items-center justify-content-center"
+                style="border: 1px solid rgba(128, 128, 128, 0.395);"><i
+                  class="fa-regular fa-circle-question me-2"></i><span class="mx-auto">Get Help</span></button>
+              <button class="btn btn-danger w-100 mt-3 fw-medium d-flex align-items-center justify-content-center"
+                (click)="logout()"><i class="fa-solid fa-arrow-right-from-bracket me-auto"></i><span
+                  class="me-auto">LogOut</span></button>
+            </div>
+            <span class="mini-arrow bg-light bg-gradient position-absolute"></span>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>

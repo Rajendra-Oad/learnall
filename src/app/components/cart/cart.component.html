@@ -1,0 +1,97 @@
+<app-header></app-header>
+
+<div class="container-fluid-xl" style="overflow: hidden;">
+    <section class="cartConatiner py-5 mt-3 mb-0">
+        <div class="container-xl py-md-5" *ngIf="items.length===0">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col empty-cart-img d-flex justify-content-center">
+                    <img src="assets/images/empty-cart.webp" alt="" class="overflow-hidden">
+                </div>
+                <div class="col empty-cart-content text-center">
+                    <h4 class="fw-bolder fs-1 mb-4">Your Crat is empty :)</h4>
+                    <p class="px-md-5 mx-5">Please click on below nutton to add courses of your choice and improve your
+                        knowledges</p>
+                    <button class="btn btn-dark text-light fw-bold w-xl-25 w-sm-50 w-md-25 py-2 mt-4" routerLink="/courses">Add Courses</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-xl py-md-3" *ngIf="items.length>0">
+            <div class="row">
+                <div class="col-8 courselist-container" >
+                    <div class="card p-0 mb-3 bg-ligth shadow-sm border-1">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <span class="fw-medium fs-3">Courses Carts</span>
+                            
+                            <div class="filter">
+                                <button class="btn btn-outline-secondary px-3 me-3"><i class="fa-solid fa-filter me-2"></i> Filter </button>
+                            <!-- Button to clear all items -->
+                            <button (click)="clearAllItems()" class="
+                            btn btn-outline-danger px-3">Clear All</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="items-in-cards card bg-light shadow-lg mb-3 border-1" *ngFor="let course of items;let i=index">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-5 col-12">
+                                    <img src="assets/images/{{course.img}}" alt="" style="width: 300px;border-radius: 10px;height: 150px;">
+                                    <button type="button" class="m-3 btn close-btn btn-outline-danger rounded-circle position-absolute top-0 end-0 d-flex align-items-center justify-content-center" (click)="removeCourse(i)" style="width: 30px;height: 30px;"><i class="fa-solid fa-xmark" style="cursor: pointer;"></i></button>
+                                </div>
+                                <div class="col-md-7 col-12 my-auto">
+                                    <p>Course Name : {{course.name}}</p>
+                                    <p>Description : {{course.about}}</p>
+                                    <p>Price :   &#8377;{{course.fee}}.00 /ONLY</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 pb-0 price-datails" >
+                    <div class="card border-1 rounded shadow-sm">
+                        <div class="card-body pb-0">
+                            <span class="card-title fw-medium fs-5 text-secondary">Price Details</span>
+                            <hr style="opacity: 0.1;">
+                                <div *ngIf="items.lenght>=1 || items.length<=9">
+                                    <p class="d-flex justify-content-between"><span>Price ({{'0'+ items.length}} items)</span> <span>&#8377;{{getTotalFees()}}</span></p>
+                                </div>
+                                
+                                <ng-container *ngIf="items.length>9">
+                                    <p>Total Courses items <span class="fw-medium">{{items.length}}</span> <span>&#8377;{{getTotalFees()}}</span></p>
+                                </ng-container>
+                                
+                                <p class="d-flex justify-content-between">Total 25% Discount <span class="text-success">- &nbsp;&#8377;{{getDiscountAmount()}}</span></p>
+                                <p class="d-flex justify-content-between">GST Fee <span class="text-success"><span class="text-secondary text-decoration-line-through me-1">&#8377;{{getTotalFees()/125}}</span>Free</span></p>
+                                <p class="d-flex justify-content-between fs-5 py-3" style="border-top: 1px dashed rgba(128, 128, 128, 0.322);border-bottom: 1px dashed rgba(128, 128, 128, 0.322);"><span class="fw-medium">Total Price </span><span class="fw-medium">&#8377;{{getDiscountPrice()}}</span></p>
+                                <p><span class="text-success fw-medium">Congratulations! You've saved &nbsp;&#8377;{{getDiscountAmount()}} rupees.</span></p>
+                        </div>
+                        
+                    </div>
+                    <div class="apply-discount mt-3">
+                        <input type="text" name="apply" class="form-control h-25 w-100" style="border: 1px solid orange;" placeholder="Enter Code ">
+                    </div>
+                    <div class="button-of-discount d-flex">
+                        <span class="text-danger mt-2">*Discount of the price</span>
+                        <button class="btn btn-warning ms-auto justify-content-end d-flex mt-2" style="font-size: 16px;">Apply Now</button>
+                    </div>
+                    <div class="add-more-courses-btn d-flex justify-content-center align-items-center">
+                        <button class="btn bg-body w-100 mt-4" routerLink="/courses">Purches Course</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div class="container-fluid-xl">
+    <div class="quote text-center py-5 rounded" style="background: #FFECD4;">
+        <div class="container-xl">
+            <div class="qoute-text py-5">
+                <h1 class="fw-normal mb-5">Seamlessly enroll in web courses with a single click today</h1>
+                <button class="btn btn-dark text-light rounded-pill fs-5 px-3">Get Started</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

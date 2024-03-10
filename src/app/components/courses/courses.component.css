@@ -1,0 +1,105 @@
+body {
+    overflow: hidden;
+}
+
+#demo img {
+    width: 100%;
+    height: 600px;
+}
+
+#courses img {
+    width: 100%;
+    height: 200px;
+}
+
+.card .card-img {
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    transition: all 0.7s;
+    width: 100%;
+}
+
+.card .card-body .card-content {
+    position: relative;
+}
+
+.card button.heart {
+    border-radius: 50%;
+    width: 40px;
+    background: none;
+    height: 40px;
+    border: none;
+    outline: none;
+    z-index: 1;
+    top: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border: 1px solid rgba(128, 128, 128, 0.432);
+    cursor: pointer;
+    right: 20px;
+    transition: all 0.3s;
+}
+
+.card .card-content-def i {
+    color: #E59819 !important;
+}
+
+.card .card-content svg {
+    padding: 8px 7px 8px 7px;
+}
+
+.card button.heart:hover,
+.card button.heart:focus {
+    background-color: #EC4646;
+    fill: white;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.card:hover{
+    border-radius: 10px;
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+.card .card-dev .dev-content {
+    position: relative;
+}
+
+.card .card-dev .dev-content>img {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgb(127, 231, 106);
+    animation: ani 0.9s alternate infinite;
+}
+
+.card .card-dev .dev-content .circle-active {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(34, 255, 27);
+    position: absolute;
+    border: 1px solid white;
+    top: 2px;
+    left: 35px;
+}
+
+@keyframes ani {
+    0%,50%{
+        box-shadow: 0 0 0 2px rgb(127, 231, 106);
+    }
+    100%{
+        box-shadow: 0 0 0 4px rgb(107, 232, 82),0 0 0 12px rgb(195, 240, 186);
+    }
+}
+
+@media (max-width:768px) {
+    .carousel-inner .carousel-item img {
+        width: 768px !important;
+
+    }
+}

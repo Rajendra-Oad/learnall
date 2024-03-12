@@ -3,31 +3,22 @@ body {
     color: #000000;
 }
 
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
-    border: 1px solid transparent;
-    border-radius: 20px; /* Add border radius */
-    background-color: #e5eafc;
-}
-
 .form-group {
     margin-bottom: 20px;
 }
 
 
 .btn-primary {
-    background-color: rgb(36, 80, 255);
+    background-color: #f87b83;
     border-color: transparent;
     transition: all 0.7s;
 }
 
 
 .btn-primary:hover {
-    background-color: rgba(36, 80, 255, 0.162);
-    color: rgb(36, 80, 255);
-    border: 1px solid rgb(36, 80, 255);
+    background-color: #ffdcde;
+    color: #FF4F5A;
+    border: 1px solid #FF4F5A;
 }
 
 input {

@@ -1,6 +1,13 @@
 <app-header></app-header>
-<h3 style="text-align: center;margin:80px 0 0 20px;">Our Services</h3>
+<h3 style="text-align: center;margin:80px 0 50px 0;">Our Services</h3>
 <div class="container mt-5">
+    <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb ms-auto d-flex justify-content-lg-end px-3">
+            <li class="breadcrumb-item"><a href routerLink="/home" routerLinkActive="active">Home</a></li>
+            <!-- <li class="breadcrumb-item"><a href="#">Library</a></li> -->
+            <li class="breadcrumb-item active" aria-current="page">Our Service</li>
+        </ol>
+    </nav>
     <ng-container>
         <table id="table">
             <thead>
@@ -32,4 +39,14 @@
         </table>
     </ng-container>
 </div>
+
+<section class="quote text-center py-5" style="background: #ef77bf;">
+    <div class="container">
+      <div class="qoute-text py-5">
+        <h1 class="fw-normal mb-5">Unlock Your Potential with Our Web Development Courses</h1>
+        <button class="btn btn-dark text-light rounded-pill fs-5 px-4 py-2">Enroll Now</button>
+      </div>
+    </div>
+  </section>
+
 <app-footer></app-footer>

@@ -170,8 +170,15 @@ section.course-details {
     padding: 140px 0;
 }
 
+.testimonials-container .card {
+    border: 1px solid #ffffff1b;
+    background-color: #c880ff0d;
+    border-radius: 15px;
+    max-height: 265px;
+    overflow: hidden;
+}
 @media (max-width:768px) {
-    .table-details .table-content h1 {
+    .table-details  h1 {
         font-size: 45px !important;
     }
 }
@@ -186,7 +193,7 @@ section.quote .qoute-text h1 {
 }
 
 @media (max-width:576px) {
-    .table-details .table-content h1 {
+    .table-details  h1 {
         font-size: 35px !important;
     }
 }

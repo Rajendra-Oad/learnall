@@ -42,11 +42,13 @@ export class CartComponent implements OnInit {
 
   // Method to remove course from the list
   removeCourse(index: number): void {
-    this.items.splice(index, 1);
+    this.items.splice(index, 0);
+    this.cartService.removeItem(index);
   }
 
   clearAllItems(): void {
     this.items.splice(0,this.items.length);
+    this.cartService.clearAllItems();
   }
 
 }

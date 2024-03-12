@@ -1,6 +1,13 @@
 <app-header></app-header>
-<h3 style="text-align: center;margin:80px 0 0 20px;">Our Bloggs</h3>
+<h3 style="text-align: center;margin:80px 0 0 0">Our Bloggs</h3>
 <div class="container my-5">
+    <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb ms-auto d-flex justify-content-lg-end px-3">
+            <li class="breadcrumb-item"><a href routerLink="/home" routerLinkActive="active">Home</a></li>
+            <!-- <li class="breadcrumb-item"><a href="#">Library</a></li> -->
+            <li class="breadcrumb-item active" aria-current="page">Our Blogs</li>
+        </ol>
+    </nav>
     <div class="row">
         <div class="col-lg-6 col-12">
             <div class="card shadow">
@@ -8,7 +15,16 @@
                     <p style="font-weight: 600;color: rgb(36, 80, 255);">How Is Looks</p>
                     <h2 style="font-weight: bold;font-size: 40px;" class="pe-5"> Let your words create masterpieces</h2>
                     <div class="text-content pt-5 mt-5 pe-4 pt-lg-0 pt-xl-5 pt-xxl-4">
-                        <p class="pt-3 pt-lg-0 mt-lg-3 mt-xxl-4 mt-lg-3 pt-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iure. Quas, accusantium! Distinctio rerum neque inventore obcaecati magnam veniam similique eos enim Lorem ipsum<span class="d-none d-md-inline d-lg-none d-xl-inline">voluptates provident consequuntur accusantium! Distinctio rerum neque exercitationem! Atque similique eos enim Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae quo natus</span> <span class="d-none d-xl-none d-xxl-inline">delectus minima voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae eveniet maxime. Labore sit fuga officia incidunt quas. Vero quis odit, eos enim Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitae eveniet maxime.Quas, accusantium</span></p>
+                        <p class="pt-3 pt-lg-0 mt-lg-3 mt-xxl-4 mt-lg-3 pt-lg-4">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Laboriosam, iure. Quas, accusantium! Distinctio rerum neque inventore
+                            obcaecati magnam veniam similique eos enim Lorem ipsum<span
+                                class="d-none d-md-inline d-lg-none d-xl-inline">voluptates provident consequuntur
+                                accusantium! Distinctio rerum neque exercitationem! Atque similique eos enim Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Omnis vitae quo natus</span> <span
+                                class="d-none d-xl-none d-xxl-inline">delectus minima voluptatum. Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Omnis vitae eveniet maxime. Labore sit fuga officia
+                                incidunt quas. Vero quis odit, eos enim Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Omnis vitae eveniet maxime.Quas, accusantium</span></p>
                     </div>
                 </div>
             </div>
@@ -28,16 +44,20 @@
                         <div class="card-body">
                             <div class="row d-flex justify-content-center align-items-center">
                                 <div class="col-xl-3 col-4 col-md-3 col-lg-4">
-                                    <img src="https://media.licdn.com/dms/image/C4E12AQEahSZTudqOXA/article-cover_image-shrink_720_1280/0/1559235296483?e=2147483647&v=beta&t=69xdU4vjwkHXJ4pAS-zwjuejOjY5qRDO-AeDE9Alvas" alt="" style="width: 120px;border-radius: 20px;">
+                                    <img src="https://media.licdn.com/dms/image/C4E12AQEahSZTudqOXA/article-cover_image-shrink_720_1280/0/1559235296483?e=2147483647&v=beta&t=69xdU4vjwkHXJ4pAS-zwjuejOjY5qRDO-AeDE9Alvas"
+                                        alt="" style="width: 120px;border-radius: 20px;">
                                 </div>
                                 <div class="col-xl-3 col-4 col-md-3 col-lg-4">
-                                    <img src="https://images.squarespace-cdn.com/content/v1/6070484cab8eb21ff507c873/1690561347382-36Z7U0R2OD7WY5JRYTM2/advantages-of-blogging-featured.jpg" alt="" style="width: 120px;border-radius: 20px;">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/6070484cab8eb21ff507c873/1690561347382-36Z7U0R2OD7WY5JRYTM2/advantages-of-blogging-featured.jpg"
+                                        alt="" style="width: 120px;border-radius: 20px;">
                                 </div>
                                 <div class="col-xl-3 col-4 col-md-3 col-lg-4">
-                                    <img src="https://imageio.forbes.com/specials-images/imageserve/5f3ab13fd5c07415895ba4b3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" alt="" style="width: 120px;border-radius: 20px;">
+                                    <img src="https://imageio.forbes.com/specials-images/imageserve/5f3ab13fd5c07415895ba4b3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+                                        alt="" style="width: 120px;border-radius: 20px;">
                                 </div>
                                 <div class="col-xl-3 d-none d-md-inline-block d-lg-none d-xl-inline-block col-md-3">
-                                    <img src="assets/images/company1.jpg" alt="" style="width: 120px;border-radius: 20px;">
+                                    <img src="assets/images/company1.jpg" alt=""
+                                        style="width: 120px;border-radius: 20px;">
                                 </div>
                             </div>
                         </div>
@@ -47,4 +67,14 @@
         </div>
     </div>
 </div>
+
+
+<section class="quote text-center py-5" style="background: #ff875b;">
+    <div class="container">
+      <div class="qoute-text py-5">
+        <h1 class="fw-normal mb-5">Explore the World of Web Development Through Our Blog</h1>
+        <button class="btn btn-dark text-light rounded-pill fs-5 px-4 py-2">Read More</button>
+      </div>
+    </div>
+  </section>
 <app-footer></app-footer>

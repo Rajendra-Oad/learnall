@@ -5,7 +5,7 @@ interface coursesType {
   fee: number,
   img: string,
   content: any,
-  duration: string
+  duration: string,
 }
 
 @Component({

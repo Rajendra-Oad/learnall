@@ -9,7 +9,7 @@ body {
 
 h3.signup {
     font-size: 50px;
-    margin-top: 5rem !important;
+    margin-top: 5rem ;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -17,7 +17,7 @@ h3.signup {
 a.logo {
     position: fixed;
     top: 14px;
-    font-size: 10rem !important;
+    font-size: 10rem ;
     text-decoration: none;
     letter-spacing: 1px;
     color: #000;
@@ -39,7 +39,8 @@ input[type="number"] {
     min-width: 320px;
     box-shadow: 0 1px 0 rgba(128, 128, 128, 0.409);
     outline: none;
-    position: relative; /* Added for positioning of the underline */
+    border-radius: 0;
+    position: relative;
 }
 
 input[type="text"]:focus,
@@ -52,10 +53,10 @@ input[type="number"]:focus {
 button[type="submit"] {
     border: 1px solid #1184ff4a;
     border-radius: 30px;
-    margin-top: 20px !important;
+    margin-top: 20px ;
     background-color: #fff;
     color: #058aff;
-    min-width: 120px !important;
+    min-width: 120px ;
     transition: all 0.7s;
 }
 
@@ -116,14 +117,8 @@ button.btn.social-media {
     display: flex;
     align-items: center;
     height: 45px;
+    color: #fff;
     margin-bottom: 20px;
-}
-
-.google-link,
-.facebook-link,
-.apple-link {
-    display: flex;
-    align-items: center;
 }
 
 .btn.social-media.google span,
@@ -131,10 +126,6 @@ button.btn.social-media {
 .btn.social-media.apple span {
     flex: 1;
     text-align: center;
-}
-
-button.btn.social-media {
-    color: #fff;
 }
 
 button.btn.social-media.google {
@@ -153,10 +144,6 @@ button.btn.social-media.apple {
     border: 1px solid black;
 }
 
-.bottom-policy-footer p {
-    color: gray;
-}
-
 span.underline {
     text-decoration: underline;
     color: gray;
@@ -170,6 +157,7 @@ span.underline:hover {
 .bottom-policy-footer {
     font-size: 12px;
     margin-top: 60px;
+    color: gray;
 }
 
 #header-signup {
@@ -200,7 +188,7 @@ span.underline:hover {
 
     h3.login {
         font-size: 25px;
-        margin-top: 0rem !important;
+        margin-top: 0rem ;
         font-weight: 500;
         letter-spacing: 0px;
     }

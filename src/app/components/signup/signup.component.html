@@ -13,7 +13,7 @@
             <div class="row">
                 <div
                     class="col-md-12 col-lg-6 col-12 d-flex justify-content-lg-end pe-lg-5 justify-content-center mt-4">
-                    <form class="" #reg="ngForm">
+                    <form class="" #reg="ngForm" style="user-select: none;">
                         <input type="text" class="fname input-field" required placeholder="First Name" name="fname"
                             [(ngModel)]="signup.fname" #fname="ngModel"><br>
                         <div *ngIf="fname.invalid && (fname.touched || fname.dirty)">
@@ -56,7 +56,7 @@
                 <span class="hr p-0 d-none d-md-block"></span>
                 <span class="or-text d-none d-md-inline">or</span>
                 <div
-                    class="col-md-12 col-lg-5 col-12 d-flex justify-content-lg-start p-0 justify-content-center align-items-center mt-5 mt-md-0 my-md-5 py-md-3">
+                    class="col-md-12 col-lg-5 col-12 d-flex justify-content-lg-start p-0 justify-content-center align-items-center mt-5 mt-md-3 my-md-5 py-md-3">
                     <div class="row">
                         <div class="my-md-5 py-md-5">
                             <div class="col-12">

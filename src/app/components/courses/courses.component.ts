@@ -111,7 +111,7 @@ export class CoursesComponent implements OnInit {
   },
   {
     name: "Mern",
-    img: "mern.jpg",
+    img: "mern.png",
     fee: 3500, 
     duration: "30Days",
     about:"MongoDB, Express.js, React, Node.js; full-stack JavaScript framework.",
@@ -122,7 +122,7 @@ export class CoursesComponent implements OnInit {
   },
   {
     name: "Mern",
-    img: "mern.jpg",
+    img: "mern.png",
     fee: 3500, 
     duration: "30Days",
     about:"MongoDB, Express.js, React, Node.js; full-stack JavaScript framework.",

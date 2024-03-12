@@ -9,6 +9,8 @@ import { ApiService } from '../../service/api.service';
 })
 export class LoginComponent {
 
+  public hidePassword:boolean = true;
+
   public login = {
     email:"",
     password:""
@@ -59,6 +61,10 @@ export class LoginComponent {
 
   redirectToFacebookLogin() {
     window.open("https://www.facebook.com/login/", '_blank');
+  }
+
+  togglePass(){
+    this.hidePassword = !this.hidePassword;
   }
 
 }

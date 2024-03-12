@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CartService {
-  private cartItems: any = [];
+  public cartItems: any = [];
 
   constructor() {
     // Retrieve cart items from local storage when the service is initialized
@@ -21,6 +21,12 @@ export class CartService {
 
   getCartItems() {
     return this.cartItems;
+
+  }
+
+  removeItem(index: any) {
+  this.cartItems.splice(index,1);
+  this.updateLocalStorage(); // Update local storage after removing item
   }
 
   clearAllItems() {

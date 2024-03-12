@@ -1,12 +1,18 @@
 <div class="conatiner-fluid">
-    <a routerLink="/home" class="logo d-none d-sm-block"><h4>Learn All</h4></a>
-    <a routerLink="/home" class="mt-5 logo-sm d-block d-sm-none fw-bold text-center text-decoration-none"><h1>Learn All</h1></a>
+    <a routerLink="/home" class="logo d-none d-sm-block">
+        <h4>Learn All</h4>
+    </a>
+    <a routerLink="/home" class="mt-5 logo-sm d-block d-sm-none fw-bold text-center text-decoration-none">
+        <h1>Learn All</h1>
+    </a>
     <div class="mt-5" id="header-login">
         <h3 class="text-center login">Log In</h3>
-        <p class="text-center">Don't have an account?<a class="text-decoration-none ms-2" routerLink="/signup">Sign Up</a></p>
-        <div class="container">
+        <p class="text-center">Don't have an account?<a class="text-decoration-none ms-2" routerLink="/signup">Sign
+                Up</a></p>
+        <div class="container" >
             <div class="row">
-                <div class="col-md-12 col-lg-6 col-12 d-flex justify-content-lg-end pe-lg-5 justify-content-center mt-4">
+                <div
+                    class="col-md-12 col-lg-6 col-12 d-flex justify-content-lg-end pe-lg-5 justify-content-center mt-4">
                     <form class="" #reg="ngForm">
                         <input type="email" class="email mt-3 mb-1 input-field" required placeholder="Email Address"
                             name="email" [(ngModel)]="login.email" #email="ngModel"><br>
@@ -25,26 +31,33 @@
                             (click)="loginForm()" [disabled]="reg.invalid || loginSuccess">
                             <span>Login<i class="fa-solid fa-chevron-right ms-3"></i></span>
                         </button>
-                    </form>
+                    </form> 
                 </div>
                 <span class="hr p-0  d-none d-lg-block"></span>
                 <span class="or-text d-none d-lg-inline">or</span>
-                <div class="col-md-12 col-lg-5 col-12 d-flex justify-content-lg-start justify-content-center align-items-center mt-5 mt-md-0">
+                <div
+                    class="col-md-12 col-lg-5 col-12 d-flex justify-content-lg-start justify-content-center align-items-center mt-5 mt-md-0">
                     <div class="row">
                         <div class="my-md-5">
                             <div class="col-12">
                                 <div class="google-link">
-                                    <button class="btn social-media google ps-0" (click)="redirectToGoogleLogin()"><img src="assets/images/Google.svg" alt="google"><span>Continue with Google</span></button>
+                                    <button class="btn social-media google ps-0" (click)="redirectToGoogleLogin()"><img
+                                            src="assets/images/Google.svg" alt="google"><span>Continue with
+                                            Google</span></button>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="facebook-link">
-                                    <button class="btn social-media facebook ps-0" (click)="redirectToFacebookLogin()"><img src="assets/images/facebook1.svg" alt="facebook"><span>Continue with Facebook</span></button>
+                                    <button class="btn social-media facebook ps-0"
+                                        (click)="redirectToFacebookLogin()"><img src="assets/images/facebook1.svg"
+                                            alt="facebook"><span>Continue with Facebook</span></button>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="apple-link">
-                                    <button class="btn social-media apple p-0" (click)="redirectToAppleLogin()"><img src="assets/images/apple.svg" alt="apple"><span>Continue with Apple</span></button>
+                                    <button class="btn social-media apple p-0" (click)="redirectToAppleLogin()"><img
+                                            src="assets/images/apple.svg" alt="apple"><span>Continue with
+                                            Apple</span></button>
                                 </div>
                             </div>
                         </div>
@@ -58,6 +71,9 @@
             <span class="underline">Privacy Policy</span>
         </span>
         <hr class="d-md-none d-block mx-4">
-        <p class="px-sm-5 px-4">This site is protected by reCAPTCHA Enterprise. <span class="underline">Google's Privacy Policy</span> and <span class="underline">Terms of Service</span> apply.</p>
+        <p class="px-sm-5 px-4">This site is protected by reCAPTCHA Enterprise. <span class="underline">Google's Privacy
+                Policy</span> and <span class="underline">Terms of Service</span> apply.</p>
     </div>
 </div>
+
+

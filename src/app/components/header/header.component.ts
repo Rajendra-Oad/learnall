@@ -1,7 +1,6 @@
 import { Component ,OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { CartService } from '../../service/cart.service';
-import { EmailValidator } from '@angular/forms';
 
 @Component({
   selector: 'app-header',

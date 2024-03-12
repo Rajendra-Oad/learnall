@@ -56,9 +56,9 @@
                                     <p class="d-flex justify-content-between"><span>Price ({{'0'+ items.length}} items)</span> <span>&#8377;{{getTotalFees()}}</span></p>
                                 </div>
                                 
-                                <ng-container *ngIf="items.length>9">
-                                    <p>Total Courses items <span class="fw-medium">{{items.length}}</span> <span>&#8377;{{getTotalFees()}}</span></p>
-                                </ng-container>
+                                <div *ngIf="items.length>=10">
+                                    <p class="d-flex justify-content-between"><span>Price ({{items.length}} items)</span> <span>&#8377;{{getTotalFees()}}</span></p>
+                                </div>
                                 
                                 <p class="d-flex justify-content-between">Total 25% Discount <span class="text-success">- &nbsp;&#8377;{{getDiscountAmount()}}</span></p>
                                 <p class="d-flex justify-content-between">GST Fee <span class="text-success"><span class="text-secondary text-decoration-line-through me-1">&#8377;{{getTotalFees()/125}}</span>Free</span></p>

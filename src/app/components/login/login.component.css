@@ -39,25 +39,24 @@ input[type="password"] {
   border: none;
   font-size: 18px;
   min-width: 320px;
-  box-shadow: 0 1px 0 rgba(128, 128, 128, 0.409);
+  border-radius: 0px;
+  box-shadow: 0 1px 0 rgba(128, 128, 128, 0.409) !important;
   outline: none;
 }
 
 input[type="email"]:hover,
 input[type="password"]:hover {
-  box-shadow: 0 1px 0 gray, 0 2px 0 rgba(128, 128, 128, 0.267);
+  box-shadow: 0 1px 0 gray, 0 2px 0 rgba(128, 128, 128, 0.267) !important;
 }
 
 input[type="email"]:active,
-input[type="email"]:valid,
-input[type="email"]:focus {
-  box-shadow: 0 1px 0 #058aff;
+input[type="email"]:focus{
+  box-shadow: 0 1px 0 #058aff !important;
 }
 
 input[type="password"]:active,
-input[type="password"]:valid,
-input[type="password"]:focus {
-  box-shadow: 0 1px 0 #058aff;
+input[type="password"]:focus{
+  box-shadow: 0 1px 0 #058aff !important;
 }
 
 a.forgot-link {
@@ -93,13 +92,13 @@ button[type="submit"]:hover {
 span.hr {
   width: 1px;
   background-color: rgba(128, 128, 128, 0.329);
-  height: 250px;
+  height: 320px;
 }
 
 span.or-text {
   position: relative;
   text-align: center;
-  top: 110px;
+  top: 145px;
   left: -25px;
   width: 50px;
   height: 25px;
